@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fancy-header {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 16px;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 2;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(226, 58, 58, 0.87);
+  background-color: #39cbde;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #020308;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #8d16ae;
+}
+
+/* index.css */
+
+body {
+  background: linear-gradient(135deg, #f769ca, #7bfef1); /* Angle and colors for the gradient */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 4.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: px;
+  border: 3px solid rgb(18, 18, 235);
+  color: rgba(175, 73, 213, 0.875); /* Set button text color to white */
+  font-size: 2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #a31197;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #eedb0b;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background: linear-gradient(135deg, #a8c0c4, #7bfef1); /* Angle and colors for the gradient */
+  }
+  a:hover {
+    color: #e0c424;
+  }
+
+}
+/* index.css */
+
+button.rectangle {
+  border-radius: 0; /* Remove rounding to make it rectangular */
+  border: 3px solid blue;
+  color: rgb(48, 236, 227); /* Text color for the button */
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #d948e1;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 200px; /* Set a fixed width for rectangle shape */
+  height: 50px; /* Set a fixed height for rectangle shape */
+  text-align: center; /* Center text horizontally */
+  display: inline-flex; /* Flexbox to center text vertically */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+button.rectangle:hover {
+  border-color: #cec518;
+}
+
+button.rectangle:focus,
+button.rectangle:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  button.rectangle {
+    background-color: #a31197;
+  }
+}
+/* index.css */
+
+
+/* index.css or Hero.css */
+
+.circle-frame {
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Same as width to maintain circle shape */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border: 5px solid white; /* Optional: add a border around the circle */
+  display: block; /* Remove extra space below the image */
+  margin-top: 2.5rem; /* Adjust spacing as needed */
+}
+/* index.css or Hero.css */
+
+.hero-container {
+  padding-left: 40px; /* Adjust to create the gap from the left boundary */
+  padding-right: 40px; /* Optional: adjust right padding if needed */
+}
+
+.header-title {
+  margin: 0;
+}
+
+.hero-content {
+  margin-left: 40px; /* Additional spacing for specific elements */
+}
+/* index.css or your stylesheet */
+/* index.css or your stylesheet */
+/* index.css or your stylesheet */
+
+@keyframes trail {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.custom-cursor {
+  position: relative;
+  cursor: none; /* Hide default cursor */
+}
+
+.custom-cursor::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 255, 0.7); /* Blue arrow color */
+  border-left: none;
+  border-top: none;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  pointer-events: none; /* Ensure it doesn't interfere with clicking */
+  animation: trail 0.5s forwards;
+}
+
+.custom-cursor:hover::after {
+  border-color: rgba(0, 0, 255, 0.9);
+}
+.heading-right {
+  margin-left: 100px; /* Adjust the value as needed */
+}
