@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.border-blue {
+  border-color: blue; /* Ensure the border color is set correctly */
+}
 
 a {
   font-weight: 500;
@@ -71,7 +74,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #eedb0b;
+  border-color: #1060e1;
 }
 button:focus,
 button:focus-visible {
@@ -81,10 +84,10 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #000000;
-    background: linear-gradient(135deg, #a8c0c4, #7bfef1); /* Angle and colors for the gradient */
+    background: linear-gradient(135deg, #03b5d4, #7bfef1); /* Angle and colors for the gradient */
   }
   a:hover {
-    color: #e0c424;
+    color: #3124e0;
   }
 
 }
@@ -192,4 +195,16 @@ button.rectangle:focus-visible {
 }
 .heading-right {
   margin-left: 100px; /* Adjust the value as needed */
+}
+/* Default shadow */
+.shadow-default {
+  box-shadow: 0 4px 6px rgba(18, 27, 208, 0.843);
+}
+
+/* Shadow color when clicked */
+.shadow-clicked {
+  box-shadow: 0 4px 6px rgba(4, 0, 255, 0.82); /* Change to desired color */
+}
+.hover\:shadow-lg:hover {
+  box-shadow: 0 4px 6px rgba(13, 9, 227, 0.931);
 }
