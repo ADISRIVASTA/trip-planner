@@ -41,5 +41,5 @@ export const SelectTravelsList = [
       icon: '💰',
     },
   ];
-  export const AI_PROMT='Generate Travel Plan for: {totalDays} Days for {traveler} People with a {budget} budget, give me Hotels options list with HotelName,Hotel address, Price, hotel image url, geocoordinates, rating, descriptions and suggest itinerary with placeName, Place Details, Place ImageUrl, Geo Coordinates, ticket Pricing, Time travel each of the location for {totalDays} days with each day plan with best time to visit in JSON format.'
+  export const AI_PROMT='Generate Travel Plan for: {totalDays} Days for {traveler} People with a {budget} budget, give me Hotels options list with HotelName,Hotel address, Price, hotel image url, geocoordinates, rating, descriptions and suggest itinerary with placeName, Place Details, Place ImageUrl, Geo Coordinates, ticket Pricing, Time travel  for any location with each day plan with best time to visit in JSON format.'
   
